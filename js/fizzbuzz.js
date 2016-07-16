@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$('#numberForm').submit(function(e){
 		e.preventDefault();
 		console.log('here');
-		i = $('.number').value();
+		i = $('.number').val();
 	})
 
 
@@ -17,11 +17,11 @@ $(document).ready(function() {
 			}
 
 		}
+	
+		else if (i % 5 === 0){
+			document.write('Buzz' + '<br>');
+		} else {
+			document.write(i + '<br>');
+		}
 	}
-	else if(i % 5 === 0){
-		document.write('Buzz' + '<br>');
-	} else {
-		console.log.(i);
-	}
-
 });
